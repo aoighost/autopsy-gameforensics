@@ -145,6 +145,7 @@ public final class RAImageIngestModule extends IngestModuleDataSource {
         final Extract steambrowser = new SteamBrowser();
         final Extract dota2 = new Dota2();
         final Extract overwolf = new Overwolf();
+        final Extract gamestopapp = new GamestopApp();
         final Extract SEUQA = new SearchEngineURLQueryAnalyzer();
 
         modules.add(chrome);
@@ -154,6 +155,7 @@ public final class RAImageIngestModule extends IngestModuleDataSource {
         modules.add(steambrowser);
         modules.add(dota2);
         modules.add(overwolf);
+        modules.add(gamestopapp);
         modules.add(SEUQA);
 
         for (Extract module : modules) {

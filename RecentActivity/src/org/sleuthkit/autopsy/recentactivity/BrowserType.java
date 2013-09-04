@@ -31,7 +31,8 @@ public enum BrowserType {
    CH(2), //Chrome
    ST(3), //Steam
    D2(4), //Dota 2
-   OW(5); //Overwolf
+   OW(5), //Overwolf
+   GS(6); //Gamestop App
     private static final Map<Integer,BrowserType> lookup
             = new HashMap<Integer,BrowserType>();
 
@@ -58,6 +59,7 @@ public enum BrowserType {
             case 3: return ST;
             case 4: return D2;
             case 5: return OW;
+            case 6: return GS;
         }
         return null;
     }
