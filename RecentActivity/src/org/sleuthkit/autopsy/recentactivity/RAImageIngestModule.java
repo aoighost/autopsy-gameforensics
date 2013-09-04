@@ -142,12 +142,18 @@ public final class RAImageIngestModule extends IngestModuleDataSource {
         final Extract iexplore = new ExtractIE();
         final Extract chrome = new Chrome();
         final Extract firefox = new Firefox();
+        final Extract steambrowser = new SteamBrowser();
+        final Extract dota2 = new Dota2();
+        final Extract overwolf = new Overwolf();
         final Extract SEUQA = new SearchEngineURLQueryAnalyzer();
 
         modules.add(chrome);
         modules.add(firefox);
         modules.add(registry);
         modules.add(iexplore);
+        modules.add(steambrowser);
+        modules.add(dota2);
+        modules.add(overwolf);
         modules.add(SEUQA);
 
         for (Extract module : modules) {

@@ -28,7 +28,10 @@ import java.util.Map;
 public enum BrowserType {
    IE(0), //Internet Explorer
    FF(1), //Firefox
-   CH(2); //Chrome
+   CH(2), //Chrome
+   ST(3), //Steam
+   D2(4), //Dota 2
+   OW(5); //Overwolf
     private static final Map<Integer,BrowserType> lookup
             = new HashMap<Integer,BrowserType>();
 
@@ -52,6 +55,9 @@ public enum BrowserType {
             case 0: return IE;
             case 1: return FF;
             case 2: return CH;
+            case 3: return ST;
+            case 4: return D2;
+            case 5: return OW;
         }
         return null;
     }
